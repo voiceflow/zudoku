@@ -255,6 +255,45 @@ export class OpenIDAuthenticationProvider implements AuthenticationProvider {
     }
   }
 
+  protected async validateState(state: string | null) {
+    const storedState = sessionStorage.getItem(STATE_KEY);
+    sessionStorage.removeItem(STATE_KEY);
+
+    if (state !== storedState) {
+      throw new AuthorizationError("Invalid state parameter");
+    }
+  }
+
+  protected async finalizeAuthentication(
+    authServer: oauth.AuthorizationServer,
+    accessToken: string,
+  ) {
+    const userInfoResponse = await oauth.userInfoRequest(
+      authServer,
+      this.client,
+      accessToken,
+    );
+    const userInfo = await userInfoResponse.json();
+
+    const profile: UserProfile = {
+      sub: userInfo.sub,
+      email: userInfo.email,
+      name: userInfo.name,
+      emailVerified: userInfo.email_verified ?? false,
+      pictureUrl: userInfo.picture,
+    };
+
+    useAuthState.setState({
+      isAuthenticated: true,
+      isPending: false,
+      profile,
+    });
+
+    const redirectTo = sessionStorage.getItem("redirect-to") ?? "/";
+    sessionStorage.removeItem("redirect-to");
+    return redirectTo;
+  }
+
   signOut = async () => {
     useAuthState.setState({
       isAuthenticated: false,

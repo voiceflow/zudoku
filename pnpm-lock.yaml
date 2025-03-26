@@ -218,6 +218,18 @@ importers:
         specifier: workspace:*
         version: link:../../packages/zudoku
 
+  examples/with-google-auth:
+    devDependencies:
+      react:
+        specifier: 'catalog:'
+        version: 19.0.0
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.0.0(react@19.0.0)
+      zudoku:
+        specifier: workspace:*
+        version: link:../../packages/zudoku
+
   examples/with-openapi-json:
     devDependencies:
       react:

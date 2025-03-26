@@ -294,6 +294,15 @@ const AuthenticationSchema = z.discriminatedUnion("type", [
     redirectToAfterSignIn: z.string().optional(),
     redirectToAfterSignOut: z.string().optional(),
   }),
+  z.object({
+    type: z.literal("google"),
+    clientId: z.string(),
+    audience: z.string().optional(),
+    scopes: z.array(z.string()).optional(),
+    redirectToAfterSignUp: z.string().optional(),
+    redirectToAfterSignIn: z.string().optional(),
+    redirectToAfterSignOut: z.string().optional(),
+  }),
 ]);
 
 const MetadataSchema = z

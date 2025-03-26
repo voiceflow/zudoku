@@ -42,3 +42,11 @@ export type SupabaseAuthenticationConfig = {
   supabaseKey: string;
   basePath?: string;
 } & RedirectOptions;
+
+export type GoogleAuthenticationConfig = {
+  type: "google";
+  clientId: string;
+  scopes?: string[];
+  audience?: string;
+  basePath?: string;
+} & RedirectOptions;
