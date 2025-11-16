@@ -14,7 +14,7 @@
     "zudoku": "workspace:*"
   },
   "devDependencies": {
-    "js-yaml": "4.1.0",
+    "js-yaml": "4.1.1",
     "serve": "14.2.4"
   }
 }
