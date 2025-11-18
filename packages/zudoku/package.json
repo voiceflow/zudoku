@@ -218,7 +218,7 @@
     "estree-util-value-to-estree": "3.3.2",
     "express": "4.21.2",
     "fast-equals": "5.2.2",
-    "glob": "11.0.1",
+    "glob": "11.1.0",
     "graphql": "16.10.0",
     "graphql-type-json": "0.3.2",
     "graphql-yoga": "5.13.2",
