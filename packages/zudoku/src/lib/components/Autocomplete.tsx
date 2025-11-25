@@ -1,13 +1,13 @@
 import { PopoverAnchor } from "@radix-ui/react-popover";
-import { useCommandState } from "cmdk";
-import { useRef, useState, type KeyboardEvent, type Ref } from "react";
 import {
   Command,
   CommandInlineInput,
   CommandItem,
   CommandList,
-} from "zudoku/ui/Command.js";
-import { Popover, PopoverContent } from "zudoku/ui/Popover.js";
+} from "@voiceflow/zudoku/ui/Command.js";
+import { Popover, PopoverContent } from "@voiceflow/zudoku/ui/Popover.js";
+import { useCommandState } from "cmdk";
+import { useRef, useState, type KeyboardEvent, type Ref } from "react";
 import { cn } from "../util/cn.js";
 
 type AutocompleteProps = {

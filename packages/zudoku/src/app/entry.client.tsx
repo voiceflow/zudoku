@@ -1,3 +1,4 @@
+import { Bootstrap } from "@voiceflow/zudoku/components";
 import { createRoot, hydrateRoot } from "react-dom/client";
 import {
   createBrowserRouter,
@@ -7,7 +8,6 @@ import {
 import config from "virtual:zudoku-config";
 import "virtual:zudoku-theme.css";
 import "vite/modulepreload-polyfill";
-import { Bootstrap } from "zudoku/components";
 import "./main.css";
 import { getRoutesByConfig } from "./main.js";
 

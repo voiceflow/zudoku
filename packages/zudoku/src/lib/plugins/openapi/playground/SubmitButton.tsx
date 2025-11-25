@@ -1,15 +1,15 @@
-import { ChevronDownIcon } from "lucide-react";
-import { useState } from "react";
-import { useFormContext } from "react-hook-form";
-import { Button } from "zudoku/ui/Button.js";
+import { Button } from "@voiceflow/zudoku/ui/Button.js";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "zudoku/ui/DropdownMenu.js";
-import { RadioGroup, RadioGroupItem } from "zudoku/ui/RadioGroup.js";
-import { ApiIdentity } from "../../../core/ZudokuContext.js";
+} from "@voiceflow/zudoku/ui/DropdownMenu.js";
+import { RadioGroup, RadioGroupItem } from "@voiceflow/zudoku/ui/RadioGroup.js";
+import { ChevronDownIcon } from "lucide-react";
+import { useState } from "react";
+import { useFormContext } from "react-hook-form";
+import { type ApiIdentity } from "../../../core/ZudokuContext.js";
 import { NO_IDENTITY } from "./Playground.js";
 
 const SubmitButton = ({

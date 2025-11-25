@@ -1,12 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
-import { matchPath, Outlet, useLocation, useNavigate } from "react-router";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "zudoku/ui/Dialog.js";
+} from "@voiceflow/zudoku/ui/Dialog.js";
+import { matchPath, Outlet, useLocation, useNavigate } from "react-router";
 import { useAuth } from "../authentication/hook.js";
 import { useZudoku } from "../components/context/ZudokuContext.js";
 import { ZudokuError } from "../util/invariant.js";

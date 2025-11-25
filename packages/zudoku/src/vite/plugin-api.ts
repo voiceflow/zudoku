@@ -191,7 +191,9 @@ const viteApiPlugin = async (
       ];
 
       if (config.apis) {
-        code.push('import { openApiPlugin } from "zudoku/plugins/openapi";');
+        code.push(
+          'import { openApiPlugin } from "@voiceflow/zudoku/plugins/openapi";',
+        );
 
         const apis = Array.isArray(config.apis) ? config.apis : [config.apis];
         const apiMetadata: ApiCatalogItem[] = [];
@@ -284,7 +286,7 @@ const viteApiPlugin = async (
 
         if (config.catalogs) {
           code.push(
-            'import { apiCatalogPlugin } from "zudoku/plugins/api-catalog";',
+            'import { apiCatalogPlugin } from "@voiceflow/zudoku/plugins/api-catalog";',
           );
 
           const catalogs = Array.isArray(config.catalogs)

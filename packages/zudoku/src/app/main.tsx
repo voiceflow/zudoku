@@ -1,3 +1,10 @@
+import {
+  Layout,
+  RouteGuard,
+  RouterError,
+  StatusPage,
+  Zudoku,
+} from "@voiceflow/zudoku/components";
 import { type RouteObject } from "react-router";
 import { configuredApiKeysPlugin } from "virtual:zudoku-api-keys-plugin";
 import {
@@ -11,13 +18,6 @@ import { configuredRedirectPlugin } from "virtual:zudoku-redirect-plugin";
 import { configuredSearchPlugin } from "virtual:zudoku-search-plugin";
 import { configuredSidebar } from "virtual:zudoku-sidebar";
 import "virtual:zudoku-theme.css";
-import {
-  Layout,
-  RouteGuard,
-  RouterError,
-  StatusPage,
-  Zudoku,
-} from "zudoku/components";
 import type { ZudokuConfig } from "../config/config.js";
 import type { ZudokuContextOptions } from "../lib/core/ZudokuContext.js";
 import { isNavigationPlugin } from "../lib/core/plugins.js";

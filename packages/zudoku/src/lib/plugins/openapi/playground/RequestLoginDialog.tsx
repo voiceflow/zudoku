@@ -1,11 +1,11 @@
-import { Button } from "zudoku/ui/Button.js";
+import { Button } from "@voiceflow/zudoku/ui/Button.js";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogFooter,
   DialogTitle,
-} from "zudoku/ui/Dialog.js";
+} from "@voiceflow/zudoku/ui/Dialog.js";
 
 const RequestLoginDialog = ({
   open,

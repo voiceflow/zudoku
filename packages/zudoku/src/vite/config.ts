@@ -222,8 +222,11 @@ export async function getViteConfig(
         input:
           configEnv.command === "build"
             ? configEnv.isSsrBuild
-              ? ["zudoku/app/entry.server.tsx", config.__meta.configPath]
-              : "zudoku/app/entry.client.tsx"
+              ? [
+                  "@voiceflow/zudoku/app/entry.server.tsx",
+                  config.__meta.configPath,
+                ]
+              : "@voiceflow/zudoku/app/entry.client.tsx"
             : undefined,
         external: [joinUrl(config.basePath, "/pagefind/pagefind.js")],
       },

@@ -1,5 +1,5 @@
+import { Card } from "@voiceflow/zudoku/ui/Card.js";
 import { type Control, Controller, useFieldArray } from "react-hook-form";
-import { Card } from "zudoku/ui/Card.js";
 import { Input } from "../../../ui/Input.js";
 import { ColorizedParam } from "../ColorizedParam.js";
 import ParamsGrid, { ParamsGridItem } from "./ParamsGrid.js";

@@ -1,6 +1,6 @@
+import { Button } from "@voiceflow/zudoku/ui/Button.js";
 import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
 import { useState } from "react";
-import { Button } from "zudoku/ui/Button.js";
 import { cn } from "../../../util/cn.js";
 import { SelectOnClick } from "./SelectOnClick.js";
 

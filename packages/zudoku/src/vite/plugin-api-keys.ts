@@ -23,7 +23,7 @@ const viteApiKeysPlugin = (getConfig: () => LoadedConfig): Plugin => {
           `import config from "virtual:zudoku-config";`,
           config.__meta.mode === "internal"
             ? `import { apiKeyPlugin } from "${config.__meta.moduleDir}/src/lib/plugins/api-keys/index.tsx";`
-            : `import { apiKeyPlugin } from "zudoku/plugins/api-keys";`,
+            : `import { apiKeyPlugin } from "@voiceflow/zudoku/plugins/api-keys";`,
           `export const configuredApiKeysPlugin = apiKeyPlugin(config.apiKeys);`,
         ];
 

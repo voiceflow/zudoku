@@ -1,6 +1,6 @@
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { Badge } from "@voiceflow/zudoku/ui/Badge.js";
 import { useState } from "react";
-import { Badge } from "zudoku/ui/Badge.js";
 import { Heading } from "../../components/Heading.js";
 import { Markdown, ProseClasses } from "../../components/Markdown.js";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../ui/Tabs.js";

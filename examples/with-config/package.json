@@ -23,7 +23,7 @@
   "devDependencies": {
     "react": "catalog:",
     "react-dom": "catalog:",
-    "zudoku": "workspace:*",
+    "@voiceflow/zudoku": "workspace:*",
     "@clerk/clerk-js": "^5.43.4"
   }
 }

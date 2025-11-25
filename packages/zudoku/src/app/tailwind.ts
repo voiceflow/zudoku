@@ -5,7 +5,7 @@ import type { LoadedConfig } from "../config/config.js";
 
 const content = [
   "./src/**/*.{js,ts,jsx,tsx,md,mdx}",
-  "./node_modules/zudoku/dist/**/*.{js,ts,jsx,tsx,md,mdx}",
+  "./node_modules/@voiceflow/zudoku/dist/**/*.{js,ts,jsx,tsx,md,mdx}",
 ];
 
 const config = (zudokuConfig?: LoadedConfig): Omit<Config, "content"> => {

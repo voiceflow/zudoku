@@ -1,20 +1,20 @@
 import { type ResultOf } from "@graphql-typed-document-node/core";
 import { useQuery, useSuspenseQuery } from "@tanstack/react-query";
-import { Helmet } from "@zudoku/react-helmet-async";
-import { ChevronsDownUpIcon, ChevronsUpDownIcon } from "lucide-react";
-import { useNavigate } from "react-router";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "zudoku/ui/Collapsible.js";
+} from "@voiceflow/zudoku/ui/Collapsible.js";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "zudoku/ui/Select.js";
+} from "@voiceflow/zudoku/ui/Select.js";
+import { Helmet } from "@zudoku/react-helmet-async";
+import { ChevronsDownUpIcon, ChevronsUpDownIcon } from "lucide-react";
+import { useNavigate } from "react-router";
 import { useSelectedServer } from "../../authentication/state.js";
 import { CategoryHeading } from "../../components/CategoryHeading.js";
 import { Heading } from "../../components/Heading.js";

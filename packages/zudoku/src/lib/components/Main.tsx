@@ -1,6 +1,6 @@
+import { Drawer, DrawerTrigger } from "@voiceflow/zudoku/ui/Drawer.js";
 import { PanelLeftIcon } from "lucide-react";
 import { type PropsWithChildren, useState } from "react";
-import { Drawer, DrawerTrigger } from "zudoku/ui/Drawer.js";
 import { cn } from "../util/cn.js";
 import { useCurrentNavigation } from "./context/ZudokuContext.js";
 import { Sidebar } from "./navigation/Sidebar.js";

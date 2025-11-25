@@ -26,6 +26,6 @@
   "devDependencies": {
     "react": "catalog:",
     "react-dom": "catalog:",
-    "zudoku": "workspace:*"
+    "@voiceflow/zudoku": "workspace:*"
   }
 }

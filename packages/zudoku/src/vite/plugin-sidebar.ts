@@ -27,7 +27,7 @@ const replaceSidebarIcons = (code: string) => {
     }
   }
 
-  const importStatement = `import { ${[...collectedIcons].join(", ")} } from "zudoku/icons";`;
+  const importStatement = `import { ${[...collectedIcons].join(", ")} } from "@voiceflow/zudoku/icons";`;
   const replacedString = code.replaceAll(
     matchIconAnnotation,
     // The element will be created by the implementers side

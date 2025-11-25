@@ -1,7 +1,11 @@
+import {
+  CommandGroup,
+  CommandItem,
+  CommandList,
+} from "@voiceflow/zudoku/ui/Command.js";
 import { FileTextIcon } from "lucide-react";
 import { useCallback } from "react";
 import { Link, useNavigate } from "react-router";
-import { CommandGroup, CommandItem, CommandList } from "zudoku/ui/Command.js";
 import {
   type PagefindSearchFragment,
   type PagefindSubResult,

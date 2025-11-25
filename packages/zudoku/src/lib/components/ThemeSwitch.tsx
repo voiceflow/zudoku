@@ -1,6 +1,6 @@
+import { Button } from "@voiceflow/zudoku/ui/Button.js";
 import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "zudoku/ui/Button.js";
 import { cn } from "../util/cn.js";
 import { ClientOnly } from "./ClientOnly.js";
 

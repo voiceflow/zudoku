@@ -22,17 +22,21 @@
     "jsx": "react-jsx",
     "types": ["vite/client"],
     "paths": {
-      "zudoku/components": ["./src/lib/components/index.ts"],
-      "zudoku/ui/*": ["./src/lib/ui/*"],
-      "zudoku/plugins/openapi": ["./src/lib/plugins/openapi/index.ts"],
-      "zudoku/plugins/search-inkeep": [
+      "@voiceflow/zudoku/components": ["./src/lib/components/index.ts"],
+      "@voiceflow/zudoku/ui/*": ["./src/lib/ui/*"],
+      "@voiceflow/zudoku/plugins/openapi": [
+        "./src/lib/plugins/openapi/index.ts"
+      ],
+      "@voiceflow/zudoku/plugins/search-inkeep": [
         "./src/lib/plugins/search-inkeep/index.tsx"
       ],
-      "zudoku/plugins/search-pagefind": [
+      "@voiceflow/zudoku/plugins/search-pagefind": [
         "./src/lib/plugins/search-pagefind/index.tsx"
       ],
-      "zudoku/plugins": ["./src/lib/core/plugins.ts"],
-      "zudoku/plugins/api-keys": ["./src/lib/plugins/api-keys/index.tsx"]
+      "@voiceflow/zudoku/plugins": ["./src/lib/core/plugins.ts"],
+      "@voiceflow/zudoku/plugins/api-keys": [
+        "./src/lib/plugins/api-keys/index.tsx"
+      ]
     }
   },
   "exclude": ["node_modules", "dist"],

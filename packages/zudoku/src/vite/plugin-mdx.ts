@@ -141,7 +141,7 @@ const viteMdxPlugin = (getConfig: () => LoadedConfig): Plugin => {
       providerImportSource:
         config.__meta.mode === "internal" || config.__meta.mode === "standalone"
           ? "@mdx-js/react"
-          : "zudoku/components",
+          : "@voiceflow/zudoku/components",
       // Treat .md files as MDX
       mdxExtensions: [".md", ".mdx"],
       format: "mdx",

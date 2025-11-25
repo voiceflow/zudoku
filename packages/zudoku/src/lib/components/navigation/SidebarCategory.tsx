@@ -1,9 +1,9 @@
 import * as Collapsible from "@radix-ui/react-collapsible";
+import { Button } from "@voiceflow/zudoku/ui/Button.js";
 import { deepEqual } from "fast-equals";
 import { ChevronRightIcon } from "lucide-react";
 import { memo, useEffect, useState } from "react";
 import { NavLink, useMatch } from "react-router";
-import { Button } from "zudoku/ui/Button.js";
 import type { SidebarItemCategory } from "../../../config/validators/SidebarSchema.js";
 import { cn } from "../../util/cn.js";
 import { joinPath } from "../../util/joinPath.js";

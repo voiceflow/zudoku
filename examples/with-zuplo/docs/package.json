@@ -24,7 +24,7 @@
     "react": "catalog:",
     "react-dom": "catalog:",
     "@mdx-js/react": "3.0.1",
-    "zudoku": "workspace:*"
+    "@voiceflow/zudoku": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "catalog:",

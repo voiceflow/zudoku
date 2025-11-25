@@ -23,7 +23,7 @@ const viteRedirectPlugin = (getConfig: () => LoadedConfig): Plugin => {
           `const redirects = ${JSON.stringify(config.redirects ?? [], null, 2)};`,
           config.__meta.mode === "internal"
             ? `import { redirectPlugin } from "${config.__meta.moduleDir}/src/lib/plugins/redirect/index.tsx";`
-            : `import { redirectPlugin } from "zudoku/plugins/redirect";`,
+            : `import { redirectPlugin } from "@voiceflow/zudoku/plugins/redirect";`,
         ];
 
         code.push(

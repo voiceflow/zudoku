@@ -9,18 +9,24 @@ const viteAliasPlugin = (getConfig: () => LoadedConfig): Plugin => {
       const config = getConfig();
 
       const replacements = [
-        ["zudoku/components", "src/lib/components/index.ts"],
-        ["zudoku/plugins/openapi", "src/lib/plugins/openapi/index.tsx"],
-        ["zudoku/plugins/api-catalog", "src/lib/plugins/api-catalog/index.tsx"],
+        ["@voiceflow/zudoku/components", "src/lib/components/index.ts"],
         [
-          "zudoku/plugins/search-inkeep",
+          "@voiceflow/zudoku/plugins/openapi",
+          "src/lib/plugins/openapi/index.tsx",
+        ],
+        [
+          "@voiceflow/zudoku/plugins/api-catalog",
+          "src/lib/plugins/api-catalog/index.tsx",
+        ],
+        [
+          "@voiceflow/zudoku/plugins/search-inkeep",
           "src/lib/plugins/search-inkeep/index.tsx",
         ],
         [
-          "zudoku/plugins/search-pagefind",
+          "@voiceflow/zudoku/plugins/search-pagefind",
           "src/lib/plugins/search-pagefind/index.tsx",
         ],
-        [/^zudoku\/ui\/(.*)\.js/, "src/lib/ui/$1.tsx"],
+        [/^@voiceflow\/zudoku\/ui\/(.*)\.js/, "src/lib/ui/$1.tsx"],
       ] as const;
 
       const aliases = replacements.map(([find, replacement]) => ({

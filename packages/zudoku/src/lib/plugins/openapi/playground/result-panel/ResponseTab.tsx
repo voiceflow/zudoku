@@ -1,19 +1,19 @@
 import { useQuery } from "@tanstack/react-query";
-import { ChevronRightIcon } from "lucide-react";
-import { Fragment, useState } from "react";
-import { Callout } from "zudoku/ui/Callout.js";
+import { Callout } from "@voiceflow/zudoku/ui/Callout.js";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "zudoku/ui/Collapsible.js";
+} from "@voiceflow/zudoku/ui/Collapsible.js";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "zudoku/ui/Select.js";
+} from "@voiceflow/zudoku/ui/Select.js";
+import { ChevronRightIcon } from "lucide-react";
+import { Fragment, useState } from "react";
 import { Card } from "../../../../ui/Card.js";
 import { SyntaxHighlight } from "../../../../ui/SyntaxHighlight.js";
 import { convertToTypes } from "./convertToTypes.js";

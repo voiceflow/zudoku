@@ -1,11 +1,11 @@
-import { FoldVerticalIcon, UnfoldVerticalIcon } from "lucide-react";
-import { type CSSProperties, type ReactNode, useRef, useState } from "react";
-import { Button } from "zudoku/ui/Button.js";
+import { Button } from "@voiceflow/zudoku/ui/Button.js";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "zudoku/ui/Collapsible.js";
+} from "@voiceflow/zudoku/ui/Collapsible.js";
+import { FoldVerticalIcon, UnfoldVerticalIcon } from "lucide-react";
+import { type CSSProperties, type ReactNode, useRef, useState } from "react";
 import { cn } from "../../util/cn.js";
 import useIsomorphicLayoutEffect from "../../util/useIsomorphicLayoutEffect.js";
 

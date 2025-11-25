@@ -1,8 +1,12 @@
 import { useMutation } from "@tanstack/react-query";
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from "@voiceflow/zudoku/ui/Alert.js";
 import { InfoIcon } from "lucide-react";
 import { Fragment, useEffect, useRef, useState, useTransition } from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { Alert, AlertDescription, AlertTitle } from "zudoku/ui/Alert.js";
 import { PathRenderer } from "../../../components/PathRenderer.js";
 
 import {
@@ -11,8 +15,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "zudoku/ui/Select.js";
-import { Textarea } from "zudoku/ui/Textarea.js";
+} from "@voiceflow/zudoku/ui/Select.js";
+import { Textarea } from "@voiceflow/zudoku/ui/Textarea.js";
 import { useSelectedServer } from "../../../authentication/state.js";
 import { useApiIdentities } from "../../../components/context/ZudokuContext.js";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../../ui/Tabs.js";

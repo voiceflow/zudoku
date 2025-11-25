@@ -1,13 +1,13 @@
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { useState } from "react";
-import { Callout } from "zudoku/ui/Callout.js";
+import { Callout } from "@voiceflow/zudoku/ui/Callout.js";
 import {
   CommandDialog,
   CommandEmpty,
   CommandInput,
-} from "zudoku/ui/Command.js";
-import { DialogTitle } from "zudoku/ui/Dialog.js";
+} from "@voiceflow/zudoku/ui/Command.js";
+import { DialogTitle } from "@voiceflow/zudoku/ui/Dialog.js";
+import { useState } from "react";
 import { joinUrl } from "../../util/joinUrl.js";
 import { getResults } from "./get-results.js";
 import type { PagefindOptions } from "./index.js";

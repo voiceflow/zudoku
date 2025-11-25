@@ -1,9 +1,9 @@
 import { type DialogProps } from "@radix-ui/react-dialog";
+import { Dialog, DialogContent } from "@voiceflow/zudoku/ui/Dialog.js";
 import { Command as CommandPrimitive } from "cmdk";
 import { Search } from "lucide-react";
 import * as React from "react";
-import { ComponentPropsWithoutRef } from "react";
-import { Dialog, DialogContent } from "zudoku/ui/Dialog.js";
+import { type ComponentPropsWithoutRef } from "react";
 import { cn } from "../util/cn.js";
 
 const Command = React.forwardRef<

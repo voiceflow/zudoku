@@ -1,7 +1,7 @@
 import { useSuspenseQuery } from "@tanstack/react-query";
+import { Link } from "@voiceflow/zudoku/components";
 import { Helmet } from "@zudoku/react-helmet-async";
 import { useMatch } from "react-router";
-import { Link } from "zudoku/components";
 import { useAuthState } from "../../authentication/state.js";
 import { Heading } from "../../components/Heading.js";
 import { Markdown } from "../../components/Markdown.js";

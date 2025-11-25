@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { Button } from "zudoku/ui/Button.js";
-import { Checkbox } from "zudoku/ui/Checkbox.js";
+import { Button } from "@voiceflow/zudoku/ui/Button.js";
+import { Checkbox } from "@voiceflow/zudoku/ui/Checkbox.js";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogFooter,
   DialogTitle,
-} from "zudoku/ui/Dialog.js";
-import { Label } from "zudoku/ui/Label.js";
+} from "@voiceflow/zudoku/ui/Dialog.js";
+import { Label } from "@voiceflow/zudoku/ui/Label.js";
+import { useState } from "react";
 import { type ApiIdentity } from "../../../core/ZudokuContext.js";
 import IdentitySelector from "./IdentitySelector.js";
 

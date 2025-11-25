@@ -1,11 +1,11 @@
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import { type PropsWithChildren, useState } from "react";
 import {
   Dialog,
   DialogContent,
   DialogTitle,
   DialogTrigger,
-} from "zudoku/ui/Dialog.js";
+} from "@voiceflow/zudoku/ui/Dialog.js";
+import { type PropsWithChildren, useState } from "react";
 import { Playground, type PlaygroundContentProps } from "./Playground.js";
 
 export type PlaygroundDialogProps = PropsWithChildren<PlaygroundContentProps>;

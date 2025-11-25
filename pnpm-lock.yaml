@@ -15,16 +15,10 @@ catalogs:
     '@types/react-dom':
       specifier: 19.0.4
       version: 19.0.4
-    '@types/react-is':
-      specifier: 19.0.0
-      version: 19.0.0
     react:
       specifier: 19.0.0
       version: 19.0.0
     react-dom:
-      specifier: 19.0.0
-      version: 19.0.0
-    react-is:
       specifier: 19.0.0
       version: 19.0.0
 
@@ -101,39 +95,39 @@ importers:
 
   docs:
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../packages/zudoku
 
   examples/api-identity-plugin:
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/api-key-service:
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/cosmo-cargo:
     devDependencies:
@@ -146,27 +140,27 @@ importers:
       '@types/react':
         specifier: 'catalog:'
         version: 19.0.10
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/many-apis:
     dependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
     devDependencies:
       js-yaml:
         specifier: 4.1.0
@@ -181,81 +175,84 @@ importers:
         specifier: ^2.49.1
         version: 2.49.1
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/with-auth0:
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/with-config:
     devDependencies:
       '@clerk/clerk-js':
         specifier: ^5.43.4
         version: 5.43.4(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/with-google-auth:
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/with-openapi-json:
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/with-openapi-yaml:
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/with-vite-config:
     devDependencies:
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
@@ -265,24 +262,21 @@ importers:
       rollup-plugin-visualizer:
         specifier: 5.14.0
         version: 5.14.0(rollup@4.35.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../packages/zudoku
 
   examples/with-zuplo/docs:
     dependencies:
       '@mdx-js/react':
         specifier: 3.0.1
         version: 3.0.1(@types/react@19.0.10)(react@19.0.0)
+      '@voiceflow/zudoku':
+        specifier: workspace:*
+        version: link:../../../packages/zudoku
       react:
         specifier: 'catalog:'
         version: 19.0.0
       react-dom:
         specifier: 'catalog:'
         version: 19.0.0(react@19.0.0)
-      zudoku:
-        specifier: workspace:*
-        version: link:../../../packages/zudoku
     devDependencies:
       '@types/node':
         specifier: 'catalog:'
@@ -484,10 +478,10 @@ importers:
         specifier: 5.66.6
         version: 5.66.6(react@19.0.0)
       '@types/react':
-        specifier: 'catalog:'
+        specifier: 19.0.10
         version: 19.0.10
       '@types/react-dom':
-        specifier: 'catalog:'
+        specifier: 19.0.4
         version: 19.0.4(@types/react@19.0.10)
       '@vitejs/plugin-react':
         specifier: 4.3.4
@@ -613,7 +607,7 @@ importers:
         specifier: 7.54.2
         version: 7.54.2(react@19.0.0)
       react-is:
-        specifier: 'catalog:'
+        specifier: 19.0.0
         version: 19.0.0
       react-router:
         specifier: 7.2.0
@@ -753,13 +747,13 @@ importers:
         specifier: 2.0.13
         version: 2.0.13
       '@types/node':
-        specifier: 'catalog:'
+        specifier: 22.13.5
         version: 22.13.5
       '@types/object-hash':
         specifier: 3.0.6
         version: 3.0.6
       '@types/react-is':
-        specifier: 'catalog:'
+        specifier: 19.0.0
         version: 19.0.0
       '@types/semver':
         specifier: 7.5.8
@@ -780,10 +774,10 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       react:
-        specifier: 'catalog:'
+        specifier: 19.0.0
         version: 19.0.0
       react-dom:
-        specifier: 'catalog:'
+        specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
       rollup-plugin-visualizer:
         specifier: 5.14.0

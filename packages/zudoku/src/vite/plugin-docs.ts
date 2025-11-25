@@ -55,7 +55,7 @@ const viteDocsPlugin = (getConfig: () => LoadedConfig): Plugin => {
           // files here as Typescript from the appDir
           config.__meta.mode === "internal"
             ? `import { markdownPlugin } from "${config.__meta.moduleDir}/src/lib/plugins/markdown/index.tsx";`
-            : `import { markdownPlugin } from "zudoku/plugins/markdown";`,
+            : `import { markdownPlugin } from "@voiceflow/zudoku/plugins/markdown";`,
           `const docsPluginOptions = [];`,
         ];
 

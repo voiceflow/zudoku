@@ -1,11 +1,11 @@
+import { Card } from "@voiceflow/zudoku/ui/Card.js";
+import { Checkbox } from "@voiceflow/zudoku/ui/Checkbox.js";
 import {
-  Control,
+  type Control,
   Controller,
   useFieldArray,
   useFormContext,
 } from "react-hook-form";
-import { Card } from "zudoku/ui/Card.js";
-import { Checkbox } from "zudoku/ui/Checkbox.js";
 import { Autocomplete } from "../../../components/Autocomplete.js";
 import { Input } from "../../../ui/Input.js";
 import { InlineInput } from "./InlineInput.js";

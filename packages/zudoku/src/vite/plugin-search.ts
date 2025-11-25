@@ -26,7 +26,7 @@ export const viteSearchPlugin = (getConfig: () => LoadedConfig): Plugin => {
       if (config.search.type === "inkeep") {
         code.push(
           `import config from 'virtual:zudoku-config';`,
-          `import { inkeepSearchPlugin } from "zudoku/plugins/search-inkeep";`,
+          `import { inkeepSearchPlugin } from "@voiceflow/zudoku/plugins/search-inkeep";`,
           `export const configuredSearchPlugin = inkeepSearchPlugin(config.search);`,
         );
 
@@ -36,7 +36,7 @@ export const viteSearchPlugin = (getConfig: () => LoadedConfig): Plugin => {
       if (config.search.type === "pagefind") {
         code.push(
           `import config from 'virtual:zudoku-config';`,
-          `import { pagefindSearchPlugin } from "zudoku/plugins/search-pagefind";`,
+          `import { pagefindSearchPlugin } from "@voiceflow/zudoku/plugins/search-pagefind";`,
           `export const configuredSearchPlugin = pagefindSearchPlugin({ ...config.search, basePath: config.basePath });`,
         );
 

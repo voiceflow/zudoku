@@ -1,4 +1,5 @@
 import { dehydrate, QueryClient } from "@tanstack/react-query";
+import { BootstrapStatic, ServerError } from "@voiceflow/zudoku/components";
 import { type HelmetData } from "@zudoku/react-helmet-async";
 import type express from "express";
 import logger from "loglevel";
@@ -12,7 +13,6 @@ import {
 } from "react-router";
 import "virtual:zudoku-theme.css";
 import "vite/modulepreload-polyfill";
-import { BootstrapStatic, ServerError } from "zudoku/components";
 import { NO_DEHYDRATE } from "../lib/components/cache.js";
 import type { FileWritingResponse } from "../vite/prerender/FileWritingResponse.js";
 import "./main.css";

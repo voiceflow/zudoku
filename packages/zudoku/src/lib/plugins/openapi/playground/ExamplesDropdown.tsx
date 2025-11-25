@@ -1,4 +1,4 @@
-import { Button } from "zudoku/ui/Button.js";
+import { Button } from "@voiceflow/zudoku/ui/Button.js";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,7 +7,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "zudoku/ui/DropdownMenu.js";
+} from "@voiceflow/zudoku/ui/DropdownMenu.js";
 import type { Content, Example } from "../SidecarExamples.js";
 
 const ExamplesDropdown = ({

@@ -1,5 +1,5 @@
+import { Button, type ButtonProps } from "@voiceflow/zudoku/ui/Button.js";
 import { forwardRef } from "react";
-import { Button, type ButtonProps } from "zudoku/ui/Button.js";
 import { Spinner } from "../components/Spinner.js";
 import { cn } from "../util/cn.js";
 
